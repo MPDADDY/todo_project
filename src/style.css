@@ -1,0 +1,82 @@
+body {
+  background-color: rgba(210, 210, 210, 0.5);
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(210, 210, 210, 0.5);
+  box-shadow: 1px 2px 6px rgba(130, 127, 127, 0.5);
+}
+
+h3 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input[type=text] {
+  width: 70%;
+  border: none;
+  padding: 20px;
+  outline: none;
+}
+
+.divider {
+  height: 2px;
+  background-color: #cfc4c4;
+  width: 100%;
+}
+
+div,
+form {
+  border-top: 2px solid #cfc4c4;
+}
+
+.listElement {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button[type=submit] {
+  float: right;
+  margin-right: 43px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.clearComleted {
+  width: 100%;
+  padding: 20px;
+  border: none;
+}
+
+button.clearComleted:hover {
+  background-color: #f1eaea;
+  cursor: pointer;
+}
+
+.completeButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.removeBtn {
+  width: fit-content;
+}
+
+.completeTask {
+  border-top: none;
+}
