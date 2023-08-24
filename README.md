@@ -1,7 +1,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <br/>
 
   <h3><b>Todo List</b></h3>
@@ -181,5 +180,3 @@ I would like to thank the entire Microverse community and family for the support
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
