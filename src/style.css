@@ -37,12 +37,13 @@ form {
   border-top: 2px solid #cfc4c4;
 }
 
-.listElement {
+.completeTask {
   display: grid;
-  grid-template-columns: 50px auto 50px;
+  grid-template-columns: 30px auto 50px;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  gap: 20px;
 }
 
 button[type=submit] {
@@ -57,7 +58,7 @@ button[type=submit] {
   align-items: center;
 }
 
-button.clearComleted {
+button.clearCompleted {
   width: 100%;
   padding: 20px;
   border: none;
@@ -75,8 +76,4 @@ button.clearComleted:hover {
 
 .removeBtn {
   width: fit-content;
-}
-
-.completeTask {
-  border-top: none;
 }
