@@ -64,8 +64,8 @@ button.clearCompleted {
   border: none;
 }
 
-button.clearComleted:hover {
-  background-color: #f1eaea;
+button.clearCompleted:hover {
+  background-color: #f4c6c6;
   cursor: pointer;
 }
 

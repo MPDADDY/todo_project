@@ -18,10 +18,9 @@ const myApp = () => {
     }
   };
 
-  // mark complete function
-  const markComplete = (index) => {
+  const markComplete = (index, completed) => {
     if (index >= 0 && index < savedLists.length) {
-      savedLists[index].completed = true;
+      savedLists[index].completed = completed;
       PopulateLocalStorage();
     }
   };
@@ -52,17 +51,22 @@ const myApp = () => {
     savedLists.forEach((list, index) => {
       const completeTask = document.createElement('div');
       completeTask.className = 'completeTask';
-      const completeButton = document.createElement('button');
-      completeButton.innerText = 'c';
-      // add an event listener to the complete button
-      completeButton.addEventListener('click', () => {
-        markComplete(index);
+
+      // Create a checkbox for marking tasks as complete
+      const completeCheckbox = document.createElement('input');
+      completeCheckbox.type = 'checkbox';
+      completeCheckbox.checked = list.completed;
+
+      completeCheckbox.addEventListener('change', (event) => {
+        markComplete(index, event.target.checked);
         renderLists(); // Re-render the list after marking as complete
       });
+
       const task = document.createElement('p');
       task.innerText = list.description;
 
       const editTask = (index, taskElement) => {
+        // ... your existing editTask code ...
         const newInput = document.createElement('input');
         newInput.type = 'text';
         newInput.value = taskElement.innerText;
@@ -78,6 +82,7 @@ const myApp = () => {
           }
         };
 
+        // ... your existing task click event listener ...
         newInput.addEventListener('keydown', (event) => {
           if (event.key === 'Enter') {
             saveEditedTask(index, newInput);
@@ -93,7 +98,7 @@ const myApp = () => {
         editTask(index, task);
       });
 
-      // clear complete
+      // ... your existing clear completed functionality ...
       const clearCompletedClickHandler = () => {
         savedLists = savedLists.filter((item) => !item.completed);
         PopulateLocalStorage();
@@ -113,17 +118,13 @@ const myApp = () => {
       remove.innerText = 'X';
       remove.setAttribute('draggable', true);
 
-      // Dragstart event listener for the remove button
-      remove.addEventListener('dragstart', (event) => {
-        event.dataTransfer.setData('text/plain', index.toString());
-      });
-
+      // ... your existing remove event listener ...
       remove.addEventListener('click', () => {
         removeTask(index);
         renderLists();
       });
 
-      completeTask.appendChild(completeButton);
+      completeTask.appendChild(completeCheckbox);
       completeTask.appendChild(task);
       completeTask.appendChild(remove);
 
@@ -137,4 +138,5 @@ const myApp = () => {
     renderLists();
   };
 };
+
 export default myApp;
