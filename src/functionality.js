@@ -66,7 +66,7 @@ const myApp = () => {
       task.innerText = list.description;
 
       const editTask = (index, taskElement) => {
-        // ... your existing editTask code ...
+
         const newInput = document.createElement('input');
         newInput.type = 'text';
         newInput.value = taskElement.innerText;
@@ -82,7 +82,6 @@ const myApp = () => {
           }
         };
 
-        // ... your existing task click event listener ...
         newInput.addEventListener('keydown', (event) => {
           if (event.key === 'Enter') {
             saveEditedTask(index, newInput);
@@ -98,7 +97,6 @@ const myApp = () => {
         editTask(index, task);
       });
 
-      // ... your existing clear completed functionality ...
       const clearCompletedClickHandler = () => {
         savedLists = savedLists.filter((item) => !item.completed);
         PopulateLocalStorage();
@@ -118,7 +116,6 @@ const myApp = () => {
       remove.innerText = 'X';
       remove.setAttribute('draggable', true);
 
-      // ... your existing remove event listener ...
       remove.addEventListener('click', () => {
         removeTask(index);
         renderLists();
