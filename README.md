@@ -72,7 +72,11 @@
 
 To get a local copy up and running, follow these steps.
 
+
+
 ### Prerequisites
+
+
 
 In order to set up and run the application you need:
 
@@ -137,6 +141,12 @@ You can deploy this project using [GitHub Pages](https://pages.github.com/)
 - GitHub: [@MPDADDY](https://github.com/MPDADDY)
 - Twitter: [@anoldmwawasi](https://twitter.com/anold_mwawasi)
 - LinkedIn: [anoldmwawasi](https://www.linkedin.com/in/anold-mwawasi/)
+
+👤 **Kwamay**
+
+- GitHub: [@kwamay](https://github.com/kwamay)
+- Twitter: [@Kwamay3](https://twitter.com/Kwamay3)
+- LinkedIn: [Kwamay Adu](https://linkedin.com/in/кωαмαу-adu-2b396321a)
 
 <!-- FUTURE FEATURES -->
 
