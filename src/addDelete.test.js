@@ -20,4 +20,12 @@ describe('AddNewTask', () => {
   it('should add a new task to savedLists', () => {
     // expect(myApp.length).toBe(myApp.length  + 1)
   });
+
+});
+
+describe('editTask', () => {
+  it('should add a new task to savedLists', () => {
+    // expect(myApp.length).toBe(myApp.length  + 1)
+  });
+
 });
