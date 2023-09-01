@@ -1,7 +1,3 @@
-// addDelete.test.js
-
-// import myApp from './functionality.js'; // Import the function you want to test
-
 const myApp = require('./functionality.js');
 
 // Mock localStorage for testing
@@ -10,13 +6,18 @@ global.localStorage = {
   setItem: jest.fn(),
 };
 
-describe('removeTask', () => {
-  it('should remove a task from savedLists', () => {
+describe('editTask', () => {
+  it('should edit a new task from savedLists', () => {
     expect(myApp.length).toBe(0);
   });
 });
 
-describe('AddNewTask', () => {
+describe('markComplete', () => {
+  it('should complete new task to savedLists', () => {
+  });
+});
+
+describe('PopulateLocalStorage', () => {
   it('should add a new task to savedLists', () => {
   });
 });
